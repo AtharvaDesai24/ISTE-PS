@@ -8,10 +8,8 @@ import EventInfo from "./components/EventInfo.jsx";
 import { DEMO_MODE, getUnlockTime } from "./config.js";
 import SubmitPPT from "./components/SubmitPPT.jsx";
 import FAQ from "./components/FAQ.jsx";
-// The page moves through three phases:
-//   "waiting"  -> timer is running
-//   "boom"     -> 3, 2, 1, BOOM animation
-//   "revealed" -> problem statements are shown
+import PSDomains from "./components/PSDomains.jsx";
+
 export default function App() {
   const [phase, setPhase] = useState("waiting");
   const [target, setTarget] = useState(getUnlockTime);
@@ -30,6 +28,8 @@ export default function App() {
       {phase === "waiting" && (
         <>
           <Countdown target={target} onComplete={() => setPhase("boom")} />
+          <br />
+          <PSDomains />
           <br />
           <FAQ />
         </>

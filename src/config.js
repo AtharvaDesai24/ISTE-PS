@@ -1,6 +1,6 @@
 export const DEMO_MODE = false;
-export const DEMO_SECONDS = 12;
-export const REAL_UNLOCK = "2026-10-26T00:35:00+05:30";
+export const DEMO_SECONDS = 4;
+export const REAL_UNLOCK = "2026-10-28T10:00:00+05:30";
 // ---- PPT submission ----
 export const SUBMISSION_URL = "https://forms.gle/wvkmgAzC7YoBsLWH8";
 export const PPT_Format_URL =
