@@ -18,6 +18,20 @@ export default function EventInfo() {
     maxWidth: 220,
   };
 
+  // Subtle credit line (small + low contrast so it doesn't stand out)
+  const credit = {
+    width: "100%",
+    marginTop: 16,
+    textAlign: "right",
+    fontSize: 11,
+    lineHeight: 1.5,
+    color: "#6b7a99",
+    opacity: 0.8,
+    position: "relative",
+    bottom: "1.5rem",
+    top: "5px",
+  };
+
   return (
     <footer className="info">
       <span>
@@ -101,6 +115,12 @@ export default function EventInfo() {
           </svg>
           Join Whatsapp Group
         </a>
+      </div>
+
+      {/* Credit */}
+      <div style={credit}>
+        <div>Website made by ISTE Technical Team</div>
+        <div style={{ opacity: "0.8" }}>~Atharva Desai</div>
       </div>
     </footer>
   );
