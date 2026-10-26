@@ -7,7 +7,10 @@ export default function Header() {
       <img src={mmcoeLogo} alt="MMCOE logo" />
       <div className="college">
         Marathwada Mitra Mandal’s College of Engineering
-        <small>An Autonomous Institute Affiliated to SPPU · NAAC A++ · NBA</small>
+        <small>
+          An Autonomous Institute permanently affiliated to SPPU
+          <br /> NAAC: A ++ | NBA Accredited
+        </small>
       </div>
       <img src={isteLogo} alt="ISTE logo" />
     </header>
