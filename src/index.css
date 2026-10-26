@@ -757,3 +757,28 @@ h1 b {
     animation: none;
   }
 }
+
+/** rulebook but */
+
+.rulebook-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #2563eb;
+  color: #fff;
+  font:
+    600 16px/1 system-ui,
+    sans-serif;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.35);
+  transition:
+    background 0.2s,
+    transform 0.15s;
+}
+.rulebook-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+.rulebook-btn:active {
+  transform: translateY(0);
+}

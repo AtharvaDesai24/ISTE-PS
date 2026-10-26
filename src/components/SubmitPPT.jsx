@@ -1,6 +1,7 @@
 import {
   SUBMISSION_URL,
   PPT_Format_URL,
+  RuleBook_URL,
   SUBMISSION_DEADLINE,
 } from "../config.js";
 
@@ -15,7 +16,6 @@ export default function SubmitPPT() {
       {SUBMISSION_DEADLINE && (
         <p className="deadline">Deadline: {SUBMISSION_DEADLINE}</p>
       )}
-
       {ready ? (
         <a
           className="btn"
@@ -28,7 +28,19 @@ export default function SubmitPPT() {
       ) : (
         <></>
       )}
-
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      {ready ? (
+        <a
+          className="btn"
+          href={RuleBook_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          See Rulebook
+        </a>
+      ) : (
+        <></>
+      )}
       <br />
       <hr
         style={{
