@@ -19,5 +19,13 @@
   "description": "## Run     npm install     npm run dev        # open the printed localhost link     npm run build      # production build in /dist",
   "main": "eslint.config.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtharvaDesai24/ISTE-PS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AtharvaDesai24/ISTE-PS/issues"
+  },
+  "homepage": "https://github.com/AtharvaDesai24/ISTE-PS#readme"
 }
